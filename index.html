@@ -25,6 +25,7 @@
   <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendors/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendors/academicons/css/academicons.min.css" rel="stylesheet">
 
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -52,6 +53,7 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li data-aos="zoom-in-right"><a href="#about" class="nav-link scrollto active"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li data-aos="zoom-in-right" data-aos-delay="200"><a href="#news" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>News</span></a></li>
           <li data-aos="zoom-in-right" data-aos-delay="200"><a href="#publications" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Publications</span></a></li>
           <li data-aos="zoom-in-left" data-aos-delay="100"><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Scholarly Activities</span></a></li>
           <li data-aos="zoom-in-right" data-aos-delay="400"><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -61,7 +63,8 @@
 
     <div class="d-flex flex-column">
         <div class="social-links mt-4 text-center">
-          <a href="#contact" class="email scrollto"><i class="bx bx-envelope"></i></a>
+          <a target="_blank" href="https://scholar.google.co.uk/citations?hl=en&user=IyHaFk0AAAAJ" class="scholar">
+            <i class="ai ai-google-scholar"></i></a>
           <a target="_blank" href="https://github.com/llseedll" class="github"><i class="bx bxl-github"></i></a>
           <a target="_blank" href="https://uk.linkedin.com/in/alecfrenn" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           <!-- <a target="_blank" href="#" class="skype"><i class="bx bxl-skype"></i></a> -->
@@ -116,8 +119,54 @@
       </div>
     </section><!-- End About Section -->
 
+    <!-- ======= News Section ======= -->
+    <section id="news" class="resume news section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Latest News</h2>
+        </div>
+
+        <div class="row pad">
+
+          <div class="col-md-12">
+            <ul>
+              <li data-aos="fade-up"><i class="bx bxs-circle"></i> <span class="label">October, 2023 –
+                Our paper <a href="publications/amoeba">Amoeba: Circumventing ML-supported Network Censorship
+                via Adversarial Reinforcement Learning</a> will appear in the Proceedings of the
+                ACM on Networking (CoNEXT).</span>
+              </li>
+              <li data-aos="fade-up"><i class="bx bxs-circle"></i> <span class="label">August, 2023 –
+                Our paper <a href="publications/sabre">Sabre: Cutting through Adversarial Noise with Adaptive Spectral
+                  Filtering and Input Reconstruction</a> will appear at IEEE S&P Spring 2024.</span>
+              </li>
+              <li data-aos="fade-up"><i class="bx bxs-circle"></i> <span class="label">August, 2023 –
+                Our paper <a href="publications/cta">Deciphering Clusters with a Deterministic Measure of
+                Clustering Tendency</a> is accepted for publication in IEEE Transactions on
+                Knowledge and Data Engineering.</span>
+                </li>
+              <li data-aos="fade-up"><i class="bx bxs-circle"></i> <span class="label">August, 2021 –
+                Our paper <a href="publications/spider">Spider: Deep Learning-driven Sparse Mobile Traffic
+                  Measurement Collection and Reconstruction</a> is accepted for publication in IEEE Global
+                Communications Conference.</span>
+                </li>
+              <li data-aos="fade-up"><i class="bx bxs-circle"></i> <span class="label">July, 2021 –
+                Received the Brendan Murphy Memorial Prize at the 33rd Next Generation Networking,
+                Multi-Service Networks workshop (Coseners).</span>
+                </li>
+              <li data-aos="fade-up"><i class="bx bxs-circle"></i> <span class="label">December, 2020 –
+                Our paper <a href="publications/acid">Adaptive Clustering-based Malicious Traffic
+                  Classification at the Network Edge</a> is accepted for publication in IEEE International
+                Conference on Computer Communications.</span>
+                </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End News Section -->
+
     <!-- ======= Publications Section ======= -->
-    <section id="publications" class="publications section-bg">
+    <section id="publications" class="publications">
       <div class="container">
         <div class="section-title">
           <h2>Recent Publications</h2>
@@ -126,7 +175,24 @@
         <div class="row pad">
           <div class="publication-item" data-aos="fade-right">
             <h5 class="publication-title">
-              <a href="publications/sabre">1. Sabre: Cutting through Adversarial Noise with
+              <a href="publications/amoeba">1. Amoeba: Circumventing ML-supported Network Censorship
+                via Adversarial Reinforcement Learning</a>
+            </h5>
+            <p class="publication-venue">To appear in:
+              <em>Proceedings of the ACM on Networking, CoNEXT</em>
+              | <span class="publication-date">2023</span>
+            </p>
+            <p class="publication-authors">
+              <i class="bx bxs-user-account"></i> by
+              Haoyu Liu,
+              <a href="https://alec-diallo.github.io/">Alec F. Diallo</a>, and
+              <a target="_blank" href="https://homepages.inf.ed.ac.uk/ppatras/">Paul Patras</a>
+            </p>
+          </div>
+
+          <div class="publication-item" data-aos="fade-right">
+            <h5 class="publication-title">
+              <a href="publications/sabre">2. Sabre: Cutting through Adversarial Noise with
                 Adaptive Spectral Filtering and Input Reconstruction</a>
             </h5>
             <p class="publication-venue">To appear in:
@@ -142,7 +208,7 @@
 
           <div class="publication-item" data-aos="fade-right">
             <h5 class="publication-title">
-              <a href="publications/cta">2. Deciphering Clusters with a Deterministic Measure of
+              <a href="publications/cta">3. Deciphering Clusters with a Deterministic Measure of
                 Clustering Tendency</a>
             </h5>
             <p class="publication-venue">Published in:
@@ -158,7 +224,7 @@
 
           <div class="publication-item" data-aos="fade-right">
             <h5 class="publication-title">
-              <a href="publications/spider">3. Spider: Deep Learning-driven Sparse Mobile Traffic
+              <a href="publications/spider">4. Spider: Deep Learning-driven Sparse Mobile Traffic
                 Measurement Collection and Reconstruction</a>
             </h5>
             <p class="publication-venue">Published in:
@@ -176,7 +242,7 @@
 
           <div class="publication-item" data-aos="fade-right">
             <h5 class="publication-title">
-              <a href="publications/acid">4. Adaptive Clustering-based Malicious Traffic Classification
+              <a href="publications/acid">5. Adaptive Clustering-based Malicious Traffic Classification
                 at the Network Edge</a>
             </h5>
             <p class="publication-venue">Published in:
@@ -200,7 +266,7 @@
     </section><!-- End Publications Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="resume" class="resume section-bg">
       <div class="container">
         <div class="section-title">
           <h2>Scholarly Activities</h2>
@@ -232,7 +298,7 @@
     </section><!-- End Resume Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
+    <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
