@@ -15,7 +15,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Publications / Spider | Alec F. Diallo</title>
+  <title>Publications / ACIDx | Alec F. Diallo</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -96,46 +96,46 @@
     <section id="publication-details" class="publication-details">
       <div class="container">
         <div class="publication-description">
-          <h2>Spider: Deep Learning-driven Sparse Mobile Traffic
-                Measurement Collection and Reconstruction</h2>
+          <h2>Cluster and Conquer: Malicious Traffic Classification at the Edge</h2>
 
           <div class="pad">
             <p class="publication-venue">Published in:
-              <em>IEEE Global Communications Conference</em>
+              <em>IEEE Transactions on Network and Service Management</em>
               <span class="publication-date">2021</span>
             </p>
 
             <p class="publication-authors">
               <i class="bx bxs-user-account"></i>
-              Yini Fang,
-              <a href="https://alec-diallo.github.io/">Alec F. Diallo</a>,
-              Chaoyun Zhang, and
+              <a href="https://alec-diallo.github.io/">Alec F. Diallo</a> and
               <a target="_blank" href="https://homepages.inf.ed.ac.uk/ppatras/">Paul Patras</a>
             </p>
 
             <div class="row">
               <div class="article-links col-md-6" align="center">
-                <a target="_blank" href="https://ieeexplore.ieee.org/document/9685804" class="action">
+                <a target="_blank" href="https://ieeexplore.ieee.org/document/10358359" class="action">
                   <i class="bx bxs-file-pdf"></i> PDF
                 </a>
                 <span class="action" data-toggle="modal" data-target="#citationModal">
                   <i class="bx bxs-quote-right"></i> Cite
                 </span>
+                <a target="_blank" href="https://github.com/Mobile-Intelligence-Lab/ACID" class="action">
+                  <i class="bx bxl-github"></i> Code
+                </a>
               </div>
 
               <div class="share-links col-md-6" align="center">
                 <span class="share-icon"><i class="bx bx-share-alt"></i></span>
                 <a target="_blank"
-                   href="https://twitter.com/intent/tweet?url=https://alec-diallo.github.io/publications/spider&text=Spider%3A%20Deep%20Learning-driven%20Sparse%20Mobile%20Traffic%20Measurement%20Collection%20and%20Reconstruction"
+                   href="https://twitter.com/intent/tweet?url=https://alec-diallo.github.io/publications/acid-x&text=Cluster%20and%20Conquer%3A%20Malicious%20Traffic%20Classification%20at%20the%20Edge"
                    class="action"><i class="bx bxl-twitter"></i></a>
                 <a target="_blank"
-                   href="https://www.facebook.com/sharer.php?u=https://alec-diallo.github.io/publications/spider&t=Spider%3A%20Deep%20Learning-driven%20Sparse%20Mobile%20Traffic%20Measurement%20Collection%20and%20Reconstruction"
+                   href="https://www.facebook.com/sharer.php?u=https://alec-diallo.github.io/publications/acid-x&t=Cluster%20and%20Conquer%3A%20Malicious%20Traffic%20Classification%20at%20the%20Edge"
                    class="action"><i class="bx bxl-facebook-circle"></i></a>
                 <a target="_blank"
-                   href="mailto:?subject=Spider%3A%20Deep%20Learning-driven%20Sparse%20Mobile%20Traffic%20Measurement%20Collection%20and%20Reconstruction&body=https://alec-diallo.github.io/publications/spider"
+                   href="mailto:?subject=Cluster%20and%20Conquer%3A%20Malicious%20Traffic%20Classification%20at%20the%20Edge&body=https://alec-diallo.github.io/publications/acid-x"
                    class="action"><i class="bx bxs-envelope"></i></a>
                 <a target="_blank"
-                   href="https://www.linkedin.com/shareArticle?url=https://alec-diallo.github.io/publications/spider&title=Spider%3A%20Deep%20Learning-driven%20Sparse%20Mobile%20Traffic%20Measurement%20Collection%20and%20Reconstruction"
+                   href="https://www.linkedin.com/shareArticle?url=https://alec-diallo.github.io/publications/acid-x&title=Cluster%20and%20Conquer%3A%20Malicious%20Traffic%20Classification%20at%20the%20Edge"
                    class="action"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
@@ -143,19 +143,22 @@
             <div class="abstract">
               <span>Abstract:</span>
               <p>
-                Data-driven mobile network management hinges on accurate traffic measurements, which routinely
-                require expensive specialized equipment and substantial local storage capabilities, and bear
-                high data transfer overheads. To overcome these challenges, in this paper we propose Spider,
-                a deep-learning-driven mobile traffic measurement collection and reconstruction framework,
-                which reduces the cost of data collection while retaining state-of-the-art accuracy in inferring
-                mobile traffic consumption with fine geographic granularity. Spider harnesses Reinforcement Learning
-                and tackles large action spaces to train a policy network that selectively samples a minimal number
-                of cells where data should be collected. We further introduce a fast and accurate neural model that
-                extracts spatiotemporal correlations from historical data to reconstruct network-wide traffic
-                consumption based on sparse measurements. Experiments we conduct with a real-world mobile traffic
-                dataset demonstrate that Spider samples 48% fewer cells as compared to several benchmarks considered,
-                and yields up to 67% lower reconstruction errors than state-of-the-art interpolation methods.
-                Moreover, our framework can adapt to previously unseen traffic patterns.
+                The uptake of digital services and IoT technology gives rise to increasingly diverse cyber attacks,
+                with which commonly-used rule-based Network Intrusion Detection Systems (NIDSs) struggle to cope.
+                Therefore, Artificial Intelligence (AI) supports a second line of defense, since this methodology
+                helps in extracting non-obvious patterns from network traffic and subsequently in detecting more
+                confidently new types of threats. Cybersecurity is however an arms race and intelligent solutions
+                face renewed challenges as attacks evolve while network traffic volumes surge. We propose
+                Adaptive Clustering-based Intrusion Detection (ACID), a novel approach to malicious traffic
+                classification and a valid candidate for deployment at the network edge. ACID addresses the critical
+                challenge of sensitivity to subtle changes in traffic features, which routinely leads to
+                misclassification. We circumvent this problem by relying on low-dimensional embeddings learned with
+                a lightweight neural model comprising multiple kernel networks that we introduce, which optimally
+                separates samples of different classes. Extensive experiments with datasets spanning 20 years
+                demonstrate ACID attains 100% accuracy and F1-score, and 0% false alarm rate, significantly
+                outperforming state-of-the-art clustering methods and NIDSs. Furthermore, our results show that
+                ACID offers a high degree of robustness to input perturbations, while intrinsically providing a
+                framework for continual learning.
               </p>
             </div>
 
@@ -176,19 +179,19 @@
               <span class="bi bi-x" aria-hidden="true" data-dismiss="modal"></span>
           </div>
           <div class="modal-body">
-            <pre><code>@inproceedings{fang2021spider,
-  title={Spider: Deep learning-driven sparse mobile traffic measurement collection and reconstruction},
-  author={Fang, Yini and Diallo, Alec F and Zhang, Chaoyun and Patras, Paul},
-  booktitle={2021 IEEE Global Communications Conference (GLOBECOM)},
-  pages={1--6},
-  year={2021},
-  organization={IEEE},
-  doi={10.1109/GLOBECOM46510.2021.9685804}
+            <pre><code>@article{diallo2023cluster,
+  author={Diallo, Alec F. and Patras, Paul},
+  journal={IEEE Transactions on Network and Service Management},
+  title={Cluster and Conquer: Malicious Traffic Classification at the Edge},
+  year={2023},
+  pages={1-15},
+  publisher={IEEE},
+  doi={10.1109/TNSM.2023.3342716}
 }</code></pre>
           </div>
           <div class="modal-footer">
             <span class="link copy-bib"><i class="bx bxs-copy"></i> Copy</span>
-            <a target="_blank" href="bib/spider.bib" class="link download-bib"><i class="bx bxs-download"></i> Download</a>
+            <a target="_blank" href="bib/acidx.bib" class="link download-bib"><i class="bx bxs-download"></i> Download</a>
           </div>
         </div>
       </div>
